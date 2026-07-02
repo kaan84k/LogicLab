@@ -1,0 +1,23 @@
+{
+  "name": "logiclab",
+  "version": "1.0.0",
+  "description": "A beginner-friendly sandbox for learning and experimenting with logic circuits.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "tsc && npx serve .",
+    "test": "tsc -p tsconfig.test.json && node --test \"dist-test/**/*.test.js\"",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "eslint": "^10.6.0",
+    "prettier": "^3.9.4",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.62.1"
+  }
+}
