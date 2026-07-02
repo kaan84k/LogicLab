@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "npm run build && rm -rf public && mkdir -p public/dist && cp index.html styles.css public/ && cp -r assets public/assets && cp -r dist/* public/dist/",
+  "outputDirectory": "public"
+}
